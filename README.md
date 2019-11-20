@@ -48,7 +48,7 @@ cache_line_size=64
 ### benchmarks σε δικό μας πρόγραμμα σε TimingSimpleCPU και MinorCPU
 Αρχικά τρέχουμε πρόγραμμα που κατασκευάζει πίνακα με 1000 τυχαίους ακεραίους και μετράει πόσοι από αυτούς είναι άρτιοι.  
 Στην αρχή χρησιμοποιούμε default παραμέτρους(freq=1GHz , mem= DDR3 1600MHz 8x8 500MB) και το τρέχουμε με μοντέλο CPU MinorCPU και TimingSimpleCPU.
-```bash
+```zsh
 $ ./build/ARM/gem5.opt -d labres/ configs/example/se.py --cpu-type=MinorCPU --caches -c gem5TestARM
 $ ./build/ARM/gem5.opt -d labres/ configs/example/se.py --cpu-type=TimingSimpleCPU --caches -c gem5TestARM
 
