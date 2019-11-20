@@ -4,7 +4,7 @@
 **Τριαρίδης Κωνσταντίνος** ΑΕΜ : 9159
 
 ### Περιεχόμενα
-1. [Καταγραφή βασικών χαρακτηριστικών συστήματος στο starter_se](www.github.com/kostino/ComputerArchitectureLab1#Καταγραφή-βασικών-χαρακτηριστικών-συστήματος-στο-starter_se)
+1. [Καταγραφή βασικών χαρακτηριστικών συστήματος στο starter_se](https://github.com/kostino/ComputerArchitectureLab1#Καταγραφή-βασικών-χαρακτηριστικών-συστήματος-στο-starter_se)
 2. Επαλήθευση ερ.1 από αρχεία config.ini, config.json
 3. Διαφορετικά μοντέλα in-order cpu στον gem-5 και benchmarks σε δικό μας πρόγραμμα
 
