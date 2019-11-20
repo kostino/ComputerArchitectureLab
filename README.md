@@ -44,4 +44,17 @@ cache_line_size=64
 ##### TimingSimpleCPU
 Το TimingSimpleCPU αποτελεί υλοποίηση του SimpleCPU μοντέλου που χρησιμοποιεί πρόσβαση στη μνήμη τύπου timing(_timing memory access_). Αυτό σημαίνει ότι σε κάθε πρόσβαση στην cache καθυστερεί και περιμένει την απάντηση από το σύστημα μνήμης (είτε NACK εάν δεν μπορούσε να ολοκληρωθεί το αίτημα είτε την τιμή στην μνήμη που ζητήθηκε) πριν συνεχίσει την εκτέλεση εντολών ,υπάρχει δηλαδή resource contention και queuing delay , αφού ο επεξεργαστής περιμένει την ολοκλήρωση της πρόσβασης στην μνήμη για να συνεχίσει.
 #### MinorCPU
-Το MinorCPU μοντέλο αποτελεί ένα in-order μοντέλο με συγκεκριμένο pipeline(Fetch1-Fetch2-Decode-Execute) αλλά προσαρμοζόμενα data structures και προσαρμοζόμενη συμπεριφορά εκτέλεσης. Το σταθερό pipeline του βοηθάει στην αναγνώριση και οπτικοποίηση μέσα σε αυτό της κάθε εντολής από μία προσομοίωση.
+Το MinorCPU μοντέλο αποτελεί ένα in-order μοντέλο με συγκεκριμένο pipeline(Fetch1-Fetch2-Decode-Execute) αλλά προσαρμοζόμενα data structures και προσαρμοζόμενη συμπεριφορά εκτέλεσης. Το σταθερό pipeline του βοηθάει στην αναγνώριση και οπτικοποίηση μέσα σε αυτό της κάθε εντολής από μία προσομοίωση. Ο MinorCPU έχει επίσης υλοποιημένο έναν branch predictor που ενεργεί στο δεύτερο στάδιο του pipeline(Fetch2).
+### benchmarks σε δικό μας πρόγραμμα σε TimingSimpleCPU και MinorCPU
+Αρχικά τρέχουμε πρόγραμμα που κατασκευάζει πίνακα με 1000 τυχαίους ακεραίους και μετράει πόσοι από αυτούς είναι άρτιοι.  
+Στην αρχή χρησιμοποιούμε default παραμέτρους(freq=1GHz , mem= DDR3 1600MHz 8x8 500MB) και το τρέχουμε με μοντέλο CPU MinorCPU και TimingSimpleCPU.
+```bash
+$ ./build/ARM/gem5.opt -d labres/ configs/example/se.py --cpu-type=MinorCPU --caches -c gem5TestARM
+$ ./build/ARM/gem5.opt -d labres/ configs/example/se.py --cpu-type=TimingSimpleCPU --caches -c gem5TestARM
+
+```
+Τα αποτελέσματα χρόνου εκτέλεσης sim_seconds είναι τα εξής:
+* _MinorCPU_ : 0.001158 s
+* _TimingSimpleCPU_ : 0.002400 s
+
+Προφανώς η διαφορά είναι ιδιαίτερα αισθητή. Αρχικά ο MinorCPU έχει υλοποιημένο branch predictor. Σε ένα πρόγραμμα όπως το δικό μας με μία μεγάλη for loop , δηλαδή ένα branch στο οποίο φτάνει το πρόγραμμα πολλές φορές στη σειρά και είναι taken πολλές φορές απανωτά ο predictor έχει πάρα πολύ μεγάλο ποσοστό επιτυχίας άρα συνολικά το πρόγραμμα πολύ γρηγορότερη εκτέλεση σε αυτό το CPU Model.
