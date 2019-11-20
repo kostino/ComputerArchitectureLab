@@ -7,7 +7,6 @@
 1. [Καταγραφή βασικών χαρακτηριστικών συστήματος στο starter_se](https://github.com/kostino/ComputerArchitectureLab1#Καταγραφή-βασικών-χαρακτηριστικών-συστήματος-στο-starter_se)
 2. [Επαλήθευση ερ.1 από αρχεία config.ini, config.json](https://github.com/kostino/ComputerArchitectureLab1#επαλήθευση-ερ1-από-αρχεία-configini-configjson)
 3. [Διαφορετικά μοντέλα in-order cpu στον gem-5 και benchmarks σε δικό μας πρόγραμμα](https://github.com/kostino/ComputerArchitectureLab1#διαφορετικά-μοντέλα-in-order-cpu-στον-gem-5-και-benchmarks-σε-δικό-μας-πρόγραμμα)
-
   --Εκτέλεση προγράμματος σε TimingSimpleCPU , MinorCPU και σύγκριση αποτελεσμάτων  
   --Ερμηνεία των αποτελεσμάτων , βάσει των διαφορών των μοντέλων  
   --Αλλαγή παραμέτρων CPU, memory στο ίδιο μοντέλο και σύγκριση αποτελεσμάτων  
