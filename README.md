@@ -76,7 +76,7 @@ $ ./build/ARM/gem5.opt -d labres/ configs/example/se.py --cpu-type=TimingSimpleC
 $ brew install gcc-7
 $ export PATH=/usr/local/bin:$PATH
 $ cd /usr/local/bin
-$ ln -s  gcc-4.9  gcc
+$ ln -s  gcc-7  gcc
 
 ```
 
