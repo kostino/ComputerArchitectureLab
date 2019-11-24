@@ -6,7 +6,7 @@
 ### Περιεχόμενα
 1. [Καταγραφή βασικών χαρακτηριστικών συστήματος στο starter_se](https://github.com/kostino/ComputerArchitectureLab1#Καταγραφή-βασικών-χαρακτηριστικών-συστήματος-στο-starter_se)
 2. [Επαλήθευση ερ.1 από αρχεία config.ini, config.json](https://github.com/kostino/ComputerArchitectureLab1#επαλήθευση-ερ1-από-αρχεία-configini-configjson)
-3. [Διαφορετικά μοντέλα in-order cpu στον gem-5 και benchmarks σε δικό μας πρόγραμμα](https://github.com/kostino/ComputerArchitectureLab1#διαφορετικά-μοντέλα-in-order-cpu-στον-gem-5-και-benchmarks-σε-δικό-μας-πρόγραμμα)  
+3. [Διαφορετικά μοντέλα in-order cpu στον gem-5 ](https://github.com/kostino/ComputerArchitectureLab1#διαφορετικά-μοντέλα-in-order-cpu-στον-gem-5) και [benchmarks σε δικό μας πρόγραμμα](https://github.com/kostino/ComputerArchitectureLab1#βenchmarks-σε-δικό-μας-πρόγραμμα-σε-timingsimplecpu-και-minorcpu) 
   a) Εκτέλεση προγράμματος σε TimingSimpleCPU , MinorCPU και σύγκριση αποτελεσμάτων  
   b) Ερμηνεία των αποτελεσμάτων , βάσει των διαφορών των μοντέλων  
   c) Αλλαγή παραμέτρων CPU, memory στο ίδιο μοντέλο και σύγκριση αποτελεσμάτων  
@@ -35,7 +35,7 @@ memories=system.mem_ctrls0 system.mem_ctrls1
 ```python
 cache_line_size=64
 ```
-### Διαφορετικά μοντέλα in-order cpu στον gem-5 και benchmarks σε δικό μας πρόγραμμα
+### Διαφορετικά μοντέλα in-order cpu στον gem-5
 Στον gem5 υπάρχουν τρία μοντέλα in-order CPUs : το MinorCPU και τα δύο μοντέλα με βάση το SimpleCPU , το TimingSimpleCPU και το AtomicSimpleCPU.
 #### SimpleCPU
 Το SimpleCPU αποτελεί ένα πολύ απλό στην υλοποίηση  in order μοντέλο κατασκευασμένο για χρήση σε απλά τεστ , όπου δεν είναι απαραίτητη η χρήση κάποιου πιο περίπλοκου μοντέλου.
