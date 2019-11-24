@@ -60,4 +60,4 @@ $ ./build/ARM/gem5.opt -d labres/ configs/example/se.py --cpu-type=TimingSimpleC
 
 ### Αλλαγή παραμέτρων CPU , memory και ερμηνεία αποτελεσμάτων
 Αρχικά αλλάξαμε και στα δύο μοντέλα το ρολόι στα 2 και 5 GHz και κάναμε μετρήσεις χρόνου εκτέλεσης:  
-![Bench with diff clocks](https://imgur.com/XjJdX62)
+![Bench with diff clocks](https://i.imgur.com/XjJdX62.png)
