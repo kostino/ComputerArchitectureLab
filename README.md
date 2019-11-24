@@ -6,7 +6,7 @@
 ### Περιεχόμενα
 1. [Καταγραφή βασικών χαρακτηριστικών συστήματος στο starter_se](https://github.com/kostino/ComputerArchitectureLab1#Καταγραφή-βασικών-χαρακτηριστικών-συστήματος-στο-starter_se)
 2. [Επαλήθευση ερ.1 από αρχεία config.ini, config.json](https://github.com/kostino/ComputerArchitectureLab1#επαλήθευση-ερ1-από-αρχεία-configini-configjson)
-3. [Διαφορετικά μοντέλα in-order cpu στον gem-5 ](https://github.com/kostino/ComputerArchitectureLab1#διαφορετικά-μοντέλα-in-order-cpu-στον-gem-5) και [benchmarks σε δικό μας πρόγραμμα](https://github.com/kostino/ComputerArchitectureLab1#βenchmarks-σε-δικό-μας-πρόγραμμα-σε-timingsimplecpu-και-minorcpu) 
+3. [Διαφορετικά μοντέλα in-order cpu στον gem-5 ](https://github.com/kostino/ComputerArchitectureLab1#διαφορετικά-μοντέλα-in-order-cpu-στον-gem-5) και [benchmarks σε δικό μας πρόγραμμα](https://github.com/kostino/ComputerArchitectureLab1#Benchmarks-σε-δικό-μας-πρόγραμμα-σε-timingsimplecpu-και-minorcpu)  
   a) Εκτέλεση προγράμματος σε TimingSimpleCPU , MinorCPU και σύγκριση αποτελεσμάτων  
   b) Ερμηνεία των αποτελεσμάτων , βάσει των διαφορών των μοντέλων  
   c) Αλλαγή παραμέτρων CPU, memory στο ίδιο μοντέλο και σύγκριση αποτελεσμάτων  
@@ -45,7 +45,7 @@ cache_line_size=64
 Το TimingSimpleCPU αποτελεί υλοποίηση του SimpleCPU μοντέλου που χρησιμοποιεί πρόσβαση στη μνήμη τύπου timing(_timing memory access_). Αυτό σημαίνει ότι σε κάθε πρόσβαση στην cache καθυστερεί και περιμένει την απάντηση από το σύστημα μνήμης (είτε NACK εάν δεν μπορούσε να ολοκληρωθεί το αίτημα είτε την τιμή στην μνήμη που ζητήθηκε) πριν συνεχίσει την εκτέλεση εντολών ,υπάρχει δηλαδή resource contention και queuing delay , αφού ο επεξεργαστής περιμένει την ολοκλήρωση της πρόσβασης στην μνήμη για να συνεχίσει.
 #### MinorCPU
 Το MinorCPU μοντέλο αποτελεί ένα in-order μοντέλο με συγκεκριμένο pipeline(Fetch1-Fetch2-Decode-Execute) αλλά προσαρμοζόμενα data structures και προσαρμοζόμενη συμπεριφορά εκτέλεσης. Το σταθερό pipeline του βοηθάει στην αναγνώριση και οπτικοποίηση μέσα σε αυτό της κάθε εντολής από μία προσομοίωση. Ο MinorCPU έχει επίσης υλοποιημένο έναν branch predictor που ενεργεί στο δεύτερο στάδιο του pipeline(Fetch2).
-###  Βenchmarks σε δικό μας πρόγραμμα σε TimingSimpleCPU και MinorCPU
+###  Benchmarks σε δικό μας πρόγραμμα σε TimingSimpleCPU και MinorCPU
 Αρχικά τρέχουμε πρόγραμμα που κατασκευάζει πίνακα με 1000 τυχαίους ακεραίους και μετράει πόσοι από αυτούς είναι άρτιοι.  
 Στην αρχή χρησιμοποιούμε default παραμέτρους(freq=1GHz , mem= DDR3 1600MHz 8x8 500MB) και το τρέχουμε με μοντέλο CPU MinorCPU και TimingSimpleCPU.
 ```zsh
