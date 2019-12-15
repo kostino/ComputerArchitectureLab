@@ -1,0 +1,3 @@
+Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+speclibm_dassoc_4	3.493415	0.060972	0.000094	0.999945
+speclibm_dassoc_8	3.493415	0.060972	0.000094	0.999945

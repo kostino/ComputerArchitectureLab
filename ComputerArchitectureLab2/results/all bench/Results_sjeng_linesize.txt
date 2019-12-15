@@ -1,0 +1,2 @@
+Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+specsjeng_linesize_128	6.799471	0.060922	0.000015	0.999825

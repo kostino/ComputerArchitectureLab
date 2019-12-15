@@ -1,0 +1,3 @@
+Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+specbzip_l2cache_1MB	1.710520	0.014796	0.000077	0.318634
+specbzip_l2cache_4MB	1.653848	0.014796	0.000077	0.251734

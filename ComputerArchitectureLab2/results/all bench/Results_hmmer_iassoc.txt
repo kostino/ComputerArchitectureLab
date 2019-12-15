@@ -1,0 +1,3 @@
+Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+spechmmer_iassoc_4	1.187777	0.001638	0.000142	0.079268
+spechmmer_iassoc_8	1.187710	0.001638	0.000090	0.080362

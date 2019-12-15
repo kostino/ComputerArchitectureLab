@@ -1,0 +1,2 @@
+Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+specbzip_linesize_128	1.666573	0.014359	0.000067	0.173845

@@ -1,0 +1,3 @@
+Benchmarks	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+specsjeng_dassoc_4	10.270520	0.121831	0.000020	0.999978
+specsjeng_dassoc_8	10.270355	0.121831	0.000020	0.999978
