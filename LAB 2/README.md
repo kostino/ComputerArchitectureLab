@@ -4,10 +4,12 @@
 **Τριαρίδης Κωνσταντίνος** ΑΕΜ : 9159
 
 ### Περιεχόμενα
-1. [Καταγραφή αποτελεσμάτων benchmarks για default τιμές](https://github.com/kostino/ComputerArchitectureLab2#καταγραφή-αποτελεσμάτων-benchmarks-για-default-τιμές)
-2. [Εύρεση στοιχείων για  default υποσύστημα μνήμης από αρχείο config.ini](https://github.com/kostino/ComputerArchitectureLab2#Εύρεση-στοιχείων-για-default-υποσύστημα-μνήμης-από-αρχείο-configini)
-3. [Αλλαγή ρολογιού στα 1GHz και σύγκριση χρόνου εκτέλεσης](https://github.com/kostino/ComputerArchitectureLab2#αλλαγή-ρολογιού-στα-1ghz-και-σύγκριση-χρόνου-εκτέλεσης)  
-4. [Κριτική Εργασίας](https://github.com/kostino/ComputerArchitectureLab2#Κριτική-εργασίας)  
+1. [Εύρεση στοιχείων για  default υποσύστημα μνήμης από αρχείο config.ini](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#εύρεση-στοιχείων-για-default-υποσύστημα-μνήμης-από-αρχείο-configini)
+2. [Καταγραφή αποτελεσμάτων benchmarks για default τιμές](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#καταγραφή-αποτελεσμάτων-benchmarks-για-default-τιμές)
+3. [Αλλαγή ρολογιού στα 1GHz και σύγκριση χρόνου εκτέλεσης](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#αλλαγή-ρολογιού-στα-1ghz-και-σύγκριση-χρόνου-εκτέλεσης)  
+4. [Αλλαγή παραμέτρων και benchmarks](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#αλλαγή-παραμέτρων-και-benchmarks)  
+5. [Βελτιστοποίηση κόστους/απόδοσης](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#βελτιστοποίηση-κόστουςαπόδοσης)  
+6. [Κριτική Εργασίας](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#κριτική-εργασίας)
 
 ### Εύρεση στοιχείων για default υποσύστημα μνήμης από αρχείο config.ini
 
