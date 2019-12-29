@@ -42,6 +42,8 @@ _Energy = (Runtime dynamic power + total leakage power) * Time_
 
 #### Μέτρηση EDAP στα προηγούμενα benchmarks
 
+Επειδή το EDAP είναι πολυ διαφορετικό για τα benchmarks βοηθάει οπτικά αυτή τη φορά να παρουσιαστεί κάθε benchmark σε δικό του γράφημα.  
+Με μωβ είναι η default τιμή και με κίτρινο η τιμή με την εκάστοτε παράμετρο αλλαγμένη για εύκολη σύγκριση.  Όλες οι μετρήσεις στο αρχείο _**data.csv**_
 
 
 ![1G](https://github.com/kostino/ComputerArchitectureLab1/blob/master/LAB%203/images/specbzip.png?raw=true)
@@ -51,23 +53,23 @@ _Energy = (Runtime dynamic power + total leakage power) * Time_
 ![1G](https://github.com/kostino/ComputerArchitectureLab1/blob/master/LAB%203/images/specsjeng.png?raw=true)
  
  
+ Παρατηρούμε ότι για όλα τα benchmarks η αύξηση του dcache associativity μειώνει το EDAP αφού μειώνει το Energy και το Area(Δεν μπορούσαμε να καταλάβουμε γιατί...) ,ενώ γενικά μικρότερες μνήμες (και L1 και L2) έχουν μικρότερο Area με ίδιο περίπου delay και energy άρα μικρότερο EDAP. Επίσης μεγαλύτερο cache line size αυξάνει τρομερά το Area άρα και το EDAP παρόλο που μειώνει το delay. Επίσης στο mcf το icache associativity μας δίνει καλύτερο EDAP αφού βελτιώνει πάρα πολύ την απόδοση όπως είδαμε στην προηγούμενη εργασία. Συνεπώς καταλήγουμε στις βέλτιστες παραμέτρους για κάθε bench:
 
-
-Βέλτιστες προδιαγραφές EDAP για κάθε benchmark:  
+##### Βέλτιστες προδιαγραφές όσον αφορά τοEDAP για κάθε benchmark:  
 **Για το bzip:**
 * L1 icache size :32 kB
 * L1 icache associativity : 2-way
 * L1 dcache size :32 kB
-* L1 dcache associativity :2-way
+* L1 dcache associativity :4-way
 * L2 cache size :1 MB
 * L2 cache associativity :8-way
-* Cache line size :128 B
+* Cache line size :64 B
 
 **Για το mcf:**
 * L1 icache size :32 kB
 * L1 icache associativity : 4-way
 * L1 dcache size :32 kB
-* L1 dcache associativity :2-way
+* L1 dcache associativity :4-way
 * L2 cache size :1 MB
 * L2 cache associativity :8-way
 * Cache line size :64 B
@@ -76,28 +78,28 @@ _Energy = (Runtime dynamic power + total leakage power) * Time_
 * L1 icache size :32 kB
 * L1 icache associativity : 2-way
 * L1 dcache size :32 kB
-* L1 dcache associativity :2-way
+* L1 dcache associativity :4-way
 * L2 cache size :1 MB
 * L2 cache associativity :8-way
-* Cache line size :128 B
+* Cache line size :64 B
 
 **Για το sjeng:**
 * L1 icache size :32 kB
 * L1 icache associativity : 2-way
 * L1 dcache size :32 kB
-* L1 dcache associativity :2-way
+* L1 dcache associativity :4-way
 * L2 cache size :1 MB
 * L2 cache associativity :8-way
-* Cache line size :128 B
+* Cache line size :64 B
 
 **Για το libm:**
 * L1 icache size :32 kB
 * L1 icache associativity : 2-way
 * L1 dcache size :32 kB
-* L1 dcache associativity :2-way
+* L1 dcache associativity :4-way
 * L2 cache size :1 MB
 * L2 cache associativity :8-way
-* Cache line size :128 B
+* Cache line size :64 B
 
 ### Κριτική εργασίας
 Σε αυτή την εργασία ξοδέψαμε πολύ χρόνο στην αναζήτηση πληροφοριών για τον τρόπο μοντελοποίησης της ισχύος από τον McPAT και αποκτήσαμε μια διαφορετική νοοτροπία σχετικά με την κατασκευή επεξεργαστών, σκεπτόμενοι περισσότερο την κατανάλωση ενέργειας και τη σχέση ενέργειας απόδοσης παρά τη στείρα βελτιστοποίηση της απόδοσης. Η διαδικασία της αυτοματοποίησης των benchmark μας προέτρεψε να μάθουμε να γράφουμε και να τροποποιούμε python scripts για να μαζέψουμε δεδομένα από αρχεία, γνώση που θα μας φανεί ιδιαίτερα χρήσιμη και επαγγελματικά. Συνολικά το εργαστήριο αν και εξαιρετικά ενδιαφέρον ήταν δύσκολο στην εκπόνηση και "μπέρδευε" τον φοιτητή καθώς παρά την κατηγοριοποίηση του ως εργαστήριο ήταν περισσότερο μια μεγάλη εργασία εξαμήνου καθώς όλη η δουλειά γινόταν από πρίν στο σπίτι καθώς το περίπλοκο και χρονοβόρο περιεχόμενο του εργαστηρίου δεν επέτρεπε την εκπόνηση στον περιορισμένο χρόνο εκεί.Αυτό βέβαια σήμαινε ότι κατά τη διάρκεια του εργαστηρίου η ουσιαστική αλληλεπίδραση με τον διδάσκοντα για απορίες, διευκρινίσεις, βοήθεια ήταν περιορισμένη και η ώρα του εργαστηρίου ήταν περισσότερο απλώς ώρα εξέτασης και όχι δουλειάς.Βέβαια στο πλαίσιο του εργαστήριου μάθαμε πάρα πολλά πράγματα που μας έφεραν σε επαφή με την πραγματική δουλειά ενός αρχιτέκτονα υπολογιστών και προσωπικά μας κίνησε το ενδιαφέρον να ασχοληθούμε περαιτέρω με την αρχιτεκτονική σαν αντικείμενο.
