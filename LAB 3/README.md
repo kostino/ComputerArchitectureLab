@@ -112,4 +112,4 @@ _Energy = (Runtime dynamic power + total leakage power) * Time_
 * [McPAT 1.0: Technical Report by hp labs](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf?fbclid=IwAR0zv3nuD7p2wTiU9U2wRF5yaEZ0zJMP6-AfH7oPrVxNhNYCXypWnLx1E6E)
 * [McPAT: An Integrated Power, Area, and Timing Modeling Framework for Multicore and Manycore Architectures](https://www.hpl.hp.com/research/mcpat/micro09.pdf?fbclid=IwAR2VZqXlQ9tCC8uJKNzaWl1TnndP-t7VMYtcVv-uSSKcHcCdf3IOefo-il8)
 * [McPAT Github Project](https://github.com/HewlettPackard/mcpat)
-* [McPAT lecture from the Univ. of Texas School of Electrical and Computer Eng.](http://users.ece.utexas.edu/~ljohn/teaching/382m-15/lectures/lec16.pdf)
+* [McPAT lecture from the Univ. of Texas: School of Electrical and Computer Eng.](http://users.ece.utexas.edu/~ljohn/teaching/382m-15/lectures/lec16.pdf)
