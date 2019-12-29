@@ -44,11 +44,11 @@ _Energy = (Runtime dynamic power + total leakage power) * Time_
 
 
 
-![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
-![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
-![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
-![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
-![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
+![1G](https://github.com/kostino/ComputerArchitectureLab1/blob/master/LAB%203/images/specbzip.png?raw=true)
+![1G](https://github.com/kostino/ComputerArchitectureLab1/blob/master/LAB%203/images/specmcf.png?raw=true)
+![1G](https://github.com/kostino/ComputerArchitectureLab1/blob/master/LAB%203/images/spechmmer.png?raw=true)
+![1G](https://github.com/kostino/ComputerArchitectureLab1/blob/master/LAB%203/images/speclibm.png?raw=true)
+![1G](https://github.com/kostino/ComputerArchitectureLab1/blob/master/LAB%203/images/specsjeng.png?raw=true)
  
  
 
