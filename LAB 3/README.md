@@ -109,6 +109,7 @@ _Energy = (Runtime dynamic power + total leakage power) * Time_
 
 ### Πηγές
 * [Computer Architecture, a quantitative approach](http://uni-site.ir/khuelec/wp-content/uploads/Computer-Architecture-A-Quantitative-Approach.pdf)
-* [McPAT 1.0: An Integrated Power, Area, and Timing Modeling Framework for Multicore Architectures](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf?fbclid=IwAR0zv3nuD7p2wTiU9U2wRF5yaEZ0zJMP6-AfH7oPrVxNhNYCXypWnLx1E6E)
+* [McPAT 1.0: Technical Report by hp labs](https://www.hpl.hp.com/research/mcpat/McPATAlpha_TechRep.pdf?fbclid=IwAR0zv3nuD7p2wTiU9U2wRF5yaEZ0zJMP6-AfH7oPrVxNhNYCXypWnLx1E6E)
 * [McPAT: An Integrated Power, Area, and Timing Modeling Framework for Multicore and Manycore Architectures](https://www.hpl.hp.com/research/mcpat/micro09.pdf?fbclid=IwAR2VZqXlQ9tCC8uJKNzaWl1TnndP-t7VMYtcVv-uSSKcHcCdf3IOefo-il8)
-* [High Performance Embedded Architectures and Compilers : Example Design p. 342-350](https://books.google.gr/books?id=9j5A9KKHF4wC&pg=PA343&lpg=PA343&dq=cache%20block%20size%20cost&source=bl&ots=RA1iwckJ63&sig=ACfU3U1s4_s_scSBng2YiF-NcubSGQ4WJQ&hl=el&sa=X&ved=2ahUKEwiZ-7r-_bfmAhV_UhUIHdy9DsoQ6AEwE3oECAoQAQ&fbclid=IwAR3VXGyE6DQK-CeaKwNvmaABf8zHao25E8jM3IVQKZEWqoMMvlFKfygSiVg#v=onepage&q=cache%20block%20size%20cost&f=false)
+* [McPAT Github Project: ](https://github.com/HewlettPackard/mcpat)
+* [McPAT lecture from the Univ. of Texas School of Electrical and Computer Eng.](http://users.ece.utexas.edu/~ljohn/teaching/382m-15/lectures/lec16.pdf)
