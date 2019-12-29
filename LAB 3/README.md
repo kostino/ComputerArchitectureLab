@@ -4,12 +4,15 @@
 **Τριαρίδης Κωνσταντίνος** ΑΕΜ : 9159
 
 ### Περιεχόμενα
-1. [Εύρεση στοιχείων για  default υποσύστημα μνήμης από αρχείο config.ini](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#εύρεση-στοιχείων-για-default-υποσύστημα-μνήμης-από-αρχείο-configini)
-2. [Καταγραφή αποτελεσμάτων benchmarks για default τιμές](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#καταγραφή-αποτελεσμάτων-benchmarks-για-default-τιμές)
-3. [Αλλαγή ρολογιού στα 1GHz και σύγκριση χρόνου εκτέλεσης](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#αλλαγή-ρολογιού-στα-1ghz-και-σύγκριση-χρόνου-εκτέλεσης)  
-4. [Αλλαγή παραμέτρων και benchmarks](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#αλλαγή-παραμέτρων-και-benchmarks)  
-5. [Βελτιστοποίηση κόστους/απόδοσης](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#βελτιστοποίηση-κόστουςαπόδοσης)  
-6. [Κριτική Εργασίας](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#κριτική-εργασίας)
+### Βήμα 1
+1. [Πληροφορίες για dynamic power και leakage από McPAT](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%203#πληροφορίες-για-dynamic-power-και-leakage-από-mcpat)
+2. [Σύγκριση διάρκειας μπαταρίας γνωρίζοντας μόνο ισχύ](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%203#σύγκριση-διάρκειας-μπαταρίας-γνωρίζοντας-μόνο-ισχύ)
+3. [Xeon vs ARM A9 με McPAT](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%203#xeon-vs-arm-a9-με-mcpat)  
+### Βήμα 2
+1. [Πληροφορίες για το delay - energy](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%203#πληροφορίες-για-το-delay---energy)  
+2. [Μέτρηση EDAP στα προηγούμενα benchmarks - επιλογή βέλτιστων προδιαγραφών
+](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%203#πληροφορίες-για-το-delay---energy)  
+*  [Κριτική Εργασίας](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#κριτική-εργασίας)
 
 ## Βήμα 1
 
@@ -40,7 +43,7 @@ _Energy = (Runtime dynamic power + total leakage power) * Time_
 Το energy υπολογίζεται ως εξής : energy = (leakage + Runtime dynamic) * time   
 Χρησιμοποιούμε το script print_energy.py που δόθηκε, τροποποιημένο ,για να αυτοματοποιήσουμε τη διαδικασία. 
 
-#### Μέτρηση EDAP στα προηγούμενα benchmarks
+### Μέτρηση EDAP στα προηγούμενα benchmarks - επιλογή βέλτιστων προδιαγραφών
 
 Επειδή το EDAP είναι πολυ διαφορετικό για τα benchmarks βοηθάει οπτικά αυτή τη φορά να παρουσιαστεί κάθε benchmark σε δικό του γράφημα.  
 Με μωβ είναι η default τιμή και με κίτρινο η τιμή με την εκάστοτε παράμετρο αλλαγμένη για εύκολη σύγκριση.  Όλες οι μετρήσεις στο αρχείο _**data.csv**_
