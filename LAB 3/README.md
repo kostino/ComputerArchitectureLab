@@ -23,20 +23,6 @@
 
 Για να διευκρινίσουμε την διάρκεια μπαταρίας για την εκτέλεση ενός προγράμματος δεν αρκεί να γνωρίζουμε την ισχύ των επεξεργαστών καθώς εάν έχουν διαφορετική απόδοση (χρονική) στην εκτέλεση του προγράμματος θα μπορούσε ο επεξεργαστής που καταναλώνει περισσότερη ισχύ να καταναλώνει συνολικά λιγότερη ενέργεια. Δεν υπάρχει τρόπος να γνωρίζουμε πλήρως μόνο με τα δεδομένα του McPAT. Χρειαζόμαστε τον χρόνο εκτέλεσης του προγράμματος,  δηλαδή δεδομένα από έναν προσομοιωτή όπως ο gem5.
 
-|                       |   bzip  |   mcf  |  hmmer |  sjeng  |   libm  |
-|:---------------------:|:-------:|:------:|:------:|:-------:|:-------:|
-|   Execution time(ms)  |  83.982 | 64.955 | 59.396 | 513.528 | 174.671 |
-|          CPI          |  1.6797 | 1.2991 | 1.1879 | 10.2706 |  3.4934 |
-| L1 icache missrate(%) |  0.0077 | 2.3612 | 0.0221 |  0.0020 |  0.0094 |
-| L1 dcache missrate(%) |  1.4798 | 0.2108 | 0.1637 | 12.1831 |  6.0972 |
-|  L2 cache missrate(%) | 28.2163 | 5.5046 | 7.7760 | 99.9972 | 99.9944 |
-
-![Time](https://github.com/kostino/ComputerArchitectureLab2/blob/master/step%201/Default%202GHz/images/time.png?raw=true)
-![CPI](https://github.com/kostino/ComputerArchitectureLab2/blob/master/step%201/Default%202GHz/images/cpi.png?raw=true)
-![Icache](https://github.com/kostino/ComputerArchitectureLab2/blob/master/step%201/Default%202GHz/images/icache.png?raw=true)
-![Dcache](https://github.com/kostino/ComputerArchitectureLab2/blob/master/step%201/Default%202GHz/images/dcache.png?raw=true)
-![L2](https://github.com/kostino/ComputerArchitectureLab2/blob/master/step%201/Default%202GHz/images/l2.png?raw=true)
-
 ### Xeon vs ARM A9 με McPAT
 
 Η συνολική ενέργεια που καταναλώνει ένας επεξεργαστής για την εκτέλεση ενός προγράμματος υπολογίζεται ως εξής :  
