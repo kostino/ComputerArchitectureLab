@@ -11,8 +11,8 @@
 ### Βήμα 2
 1. [Πληροφορίες για το delay - energy](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%203#πληροφορίες-για-το-delay---energy)  
 2. [Μέτρηση EDAP στα προηγούμενα benchmarks - επιλογή βέλτιστων προδιαγραφών
-](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%203#πληροφορίες-για-το-delay---energy)  
-*  [Κριτική Εργασίας](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%202#κριτική-εργασίας)
+](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%203#μέτρηση-edap-στα-προηγούμενα-benchmarks---επιλογή-βέλτιστων-προδιαγραφών)  
+*  [Κριτική Εργασίας](https://github.com/kostino/ComputerArchitectureLab1/tree/master/LAB%203#κριτική-εργασίας)
 
 ## Βήμα 1
 
