@@ -52,18 +52,19 @@ _Energy = (Runtime dynamic power + total leakage power) * Time_
 ### Πληροφορίες για το delay - energy
 Το delay είναι ο χρόνος εκτέλεσης του προγράμματος και θα το βρούμε από τα στατιστικά του gem5: στο αρχείο stats.txt το sim_seconds.  
 Το energy υπολογίζεται ως εξής : energy = (leakage + Runtime dynamic) * time   
-Χρησιμοποιούμε το script print_energy που δόθηκε τροποποιημένο για να αυτοματοποιήσουμε τη διαδικασία. 
+Χρησιμοποιούμε το script print_energy.py που δόθηκε, τροποποιημένο ,για να αυτοματοποιήσουμε τη διαδικασία. 
 
 #### Μέτρηση EDAP στα προηγούμενα benchmarks
 
+
+
 ![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
 ![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
 ![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
 ![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
 ![1G](https://github.com/kostino/ComputerArchitectureLab2/blob/master/bench%20images/ls.png?raw=true)
- L1 cache κοστίζουν 1 μονάδα κόστους ενώ 2MB L2 cache κοστίζουν επίσης 1 μονάδα κόστους.  
-Όσον αφορά την αλλαγή του μεγέθους , είτε στην L1 είτε στην L2 ,διπλασιασμός του μεγέθους σημαίνει διπλασιασμό του hardware που χρησιμοποιείται άρα και περίπου διπλασιασμό του κόστους, δηλαδή έχω μία σχεδόν γραμμική σχέση μεγέθους-κόστους.
-Έχουμε δηλαδή :  
+ 
+ 
 
 
 Βέλτιστες προδιαγραφές EDAP για κάθε benchmark:  
